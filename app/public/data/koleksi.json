@@ -1,10 +1,10 @@
 [
   {
     "id": "1",
-    "judul": "Contoh item pertama",
-    "kategori": "Contoh",
-    "fieldTema1": "ganti sesuai field tema",
-    "fieldTema2": 0,
-    "fieldTema3": "ganti sesuai field tema"
+    "judul": "Ayam Geprek Mba Uwa",
+    "kategori": "Nasi",
+    "alamat": "Jl. Perum Pemda Wayhui",
+    "Hargaratarata": 12000,
+    "Jambuka": "08:00-22:00"
   }
 ]
