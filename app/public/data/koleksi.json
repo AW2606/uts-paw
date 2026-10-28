@@ -4,7 +4,79 @@
     "judul": "Ayam Geprek Mba Uwa",
     "kategori": "Nasi",
     "alamat": "Jl. Perum Pemda Wayhui",
-    "Hargaratarata": 12000,
-    "Jambuka": "08:00-22:00"
+    "hargaRataRata": 12000,
+    "jamBuka": "08:00-22:00"
+  },
+  {
+    "id": "2",
+    "judul": "Sate Madura Belwis",
+    "kategori": "Jajanan",
+    "alamat": "Jalan Lapas Raya",
+    "hargaRataRata": 16000,
+    "jamBuka": "19:00-23:00"
+  },
+  {
+    "id": "3",
+    "judul": "Sentra ITERA",
+    "kategori": "Jajanan",
+    "alamat": "Kampus ITERA, Way Huwi",
+    "hargaRataRata": 20000,
+    "jamBuka": "06:00-11:00"
+  },
+  {
+    "id": "4",
+    "judul": "Mie Ayam Belwis",
+    "kategori": "Mie",
+    "alamat": "Jalan lapas Raya",
+    "hargaRataRata": 13000,
+    "jamBuka": "18:00-23:00"
+  },
+  {
+    "id": "5",
+    "judul": "Jus Arunika",
+    "kategori": "Minuman",
+    "alamat": "Jalan Lapas Raya",
+    "hargaRataRata": 5000,
+    "jamBuka": "09:00-23:00"
+  },
+  {
+    "id": "6",
+    "judul": "Seblak Airan",
+    "kategori": "Jajanan",
+    "alamat": "Jl.Airan Raya",
+    "hargaRataRata": 15000,
+    "jamBuka": "09:00-18:00"
+  },
+  {
+    "id": "7",
+    "judul": "Nuju Korpri",
+    "kategori": "Minuman",
+    "alamat": "Jl.Ryacudu No.5",
+    "hargaRataRata": 23000,
+    "jamBuka": "00:00-00:00"
+  },
+  {
+    "id": "8",
+    "judul": "Ayam Geprek Putra Tanjung",
+    "kategori": "Nasi",
+    "alamat": "Jl.Lapas Raya",
+    "hargaRataRata": 12000,
+    "jamBuka": "12:00-23:00"
+  },
+  {
+    "id": "9",
+    "judul": "Nasi Padang Airan",
+    "kategori": "Nasi",
+    "alamat": "Jl.Raden Saleh",
+    "hargaRataRata": 13000,
+    "jamBuka": "09:00-19:00"
+  },
+  {
+    "id": "10",
+    "judul": "Martabak Telur Arunika",
+    "kategori": "Jajanan",
+    "alamat": "Jl.Lapas Raya",
+    "hargaRataRata": 7000,
+    "jamBuka": "18:00-23:00"
   }
 ]
