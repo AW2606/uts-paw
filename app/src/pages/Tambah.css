@@ -41,3 +41,12 @@
     align-self: stretch;
   }
 }
+#judul,
+#alamat,
+#jamBuka {
+  background-color: #ffffff;
+}
+
+.formulir button:hover {
+  opacity: 0.9;
+}
