@@ -13,7 +13,7 @@ export default function Layout() {
   return (
     <div className="kerangka">
       <header className="kepala">
-        <strong>Direktori Kuliner Sekitar Kampus</strong>
+        <strong>Pusat Informasi Kuliner Sekitar ITERA</strong>
         <nav className="menu">
           {MENU.map(({ ke, label }) => (
             <NavLink key={ke} to={ke} end={ke === '/'}>
