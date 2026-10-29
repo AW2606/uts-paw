@@ -1,33 +1,37 @@
-import { useState } from 'react'
-import useKoleksi from '../hooks/useKoleksi.js'
-import KotakPencarian from '../components/KotakPencarian.jsx'
-import KartuItem from '../components/KartuItem.jsx'
+import { useState } from "react";
+import useKoleksi from "../hooks/useKoleksi.js";
+import KotakPencarian from "../components/KotakPencarian.jsx";
+import KartuItem from "../components/KartuItem.jsx";
+import FilterKategori from "../components/FilterKategori.jsx";
 
 export default function Koleksi() {
-  const { items, loading, error } = useKoleksi()
-  const [cari, setCari] = useState('')
-  const [kategori, setKategori] = useState('Semua')
+  const { items, loading, error } = useKoleksi();
+  const [cari, setCari] = useState("");
+  const [kategori, setKategori] = useState("Semua");
 
-  if (loading) return <p>Memuat data...</p>
-  if (error) return <p role="alert">Gagal memuat: {error}</p>
+  if (loading) return <p>Memuat data...</p>;
+  if (error) return <p role="alert">Gagal memuat: {error}</p>;
 
-  const daftarKategori = ['Semua', ...new Set(items.map((item) => item.kategori))]
+  const daftarKategori = [
+    "Semua",
+    ...new Set(items.map((item) => item.kategori)),
+  ];
   const tampil = items.filter(
     (item) =>
       item.judul.toLowerCase().includes(cari.toLowerCase()) &&
-      (kategori === 'Semua' || item.kategori === kategori),
-  )
+      (kategori === "Semua" || item.kategori === kategori),
+  );
 
   return (
     <section>
       <h1>Koleksi</h1>
       <div className="alat-koleksi">
         <KotakPencarian nilai={cari} onUbah={setCari} />
-        <select aria-label="Kategori" value={kategori} onChange={(e) => setKategori(e.target.value)}>
-          {daftarKategori.map((k) => (
-            <option key={k}>{k}</option>
-          ))}
-        </select>
+        <FilterKategori
+          daftar={daftarKategori}
+          nilai={kategori}
+          onUbah={setKategori}
+        />
       </div>
       {tampil.length === 0 ? (
         <p>Tidak ada item yang cocok.</p>
@@ -39,5 +43,5 @@ export default function Koleksi() {
         </div>
       )}
     </section>
-  )
+  );
 }
