@@ -1,10 +1,10 @@
 # Pusat Informasi Kuliner Sekitar ITERA
 
-Nama: Adhitya Warman
-NIM: 124140007
-Kelas: RA
-Tema: Direktori Kuliner Sekitar Kampus
-Deployment: https://aw2606.github.io/uts-paw/
+- **Nama:** Adhitya Warman
+- **NIM:** 124140007
+- **Kelas:** RA
+- **Tema:** Direktori Kuliner Sekitar Kampus
+- **Deployment:** https://aw2606.github.io/uts-paw/
 
 ![Tangkapan layar beranda](docs/beranda.png)
 
