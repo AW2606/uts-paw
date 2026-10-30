@@ -1,7 +1,14 @@
 export default function RingkasanKoleksi({ jumlahItem, jumlahKategori }) {
   return (
-    <p>
-      Ada {jumlahItem} tempat makan dalam {jumlahKategori} kategori.
-    </p>
+    <div className="ringkasan">
+      <div className="kotak-angka">
+        <strong>{jumlahItem}</strong>
+        <span>Tempat Makan</span>
+      </div>
+      <div className="kotak-angka">
+        <strong>{jumlahKategori}</strong>
+        <span>Kategori</span>
+      </div>
+    </div>
   )
 }

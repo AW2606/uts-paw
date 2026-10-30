@@ -1,0 +1,96 @@
+.beranda {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+  padding: 2.5rem 0;
+}
+
+.kicker {
+  color: #d96b43;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  margin: 0 0 1rem;
+}
+
+.beranda h1 {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 3.4rem;
+  line-height: 1.12;
+  color: #18362b;
+  margin: 0 0 1.25rem;
+}
+
+.subjudul {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #18362b;
+  margin: 0 0 0.6rem;
+}
+
+.deskripsi {
+  color: #6b706b;
+  font-size: 0.98rem;
+  line-height: 1.6;
+  margin: 0 0 1.75rem;
+  max-width: 480px;
+}
+
+.tombol {
+  display: inline-block;
+  padding: 0.85rem 1.75rem;
+  background: #18362b;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 999px;
+  font-weight: 600;
+  margin-bottom: 2.5rem;
+}
+
+.ringkasan {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.kotak-angka {
+  background: #ffffff;
+  border: 1px solid #eae6df;
+  border-radius: 16px;
+  padding: 1.25rem 1.75rem;
+  min-width: 130px;
+  display: flex;
+  flex-direction: column;
+}
+
+.kotak-angka strong {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 2.25rem;
+  color: #18362b;
+  line-height: 1.1;
+  margin-bottom: 0.25rem;
+}
+
+.kotak-angka span {
+  color: #6b706b;
+  font-size: 0.88rem;
+}
+
+.gambar-beranda {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 22px;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .beranda {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .beranda h1 {
+    font-size: 2.25rem;
+  }
+}
