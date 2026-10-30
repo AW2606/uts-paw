@@ -1,52 +1,93 @@
+.halaman-tambah {
+  max-width: 640px;
+  padding: 1rem 0;
+}
+
+.halaman-tambah h1 {
+  font-size: 2.75rem;
+  margin: 0 0 0.75rem;
+}
+
+.subjudul-tambah {
+  color: #6b706b;
+  margin: 0 0 2rem;
+}
+
 .formulir {
+  background: #ffffff;
+  border: 1px solid #eae6df;
+  border-radius: 18px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
-  max-width: 480px;
+  gap: 0.45rem;
 }
 
 .formulir label {
   margin-top: 0.75rem;
   font-weight: 600;
+  font-size: 0.92rem;
+  color: #18362b;
+}
+
+.formulir label:first-of-type {
+  margin-top: 0;
 }
 
 .formulir input,
 .formulir select {
-  padding: 0.5rem 0.75rem;
-  border: 1px solid #c4c4c4;
-  border-radius: 6px;
+  padding: 0.7rem 0.9rem;
+  border: 1px solid #dcded6;
+  border-radius: 10px;
   font: inherit;
+  color: #18362b;
+  background-color: #faf9f6;
 }
 
-.formulir [role='alert'] {
-  margin: 0;
-  color: #b42318;
-  font-size: 0.9rem;
-}
-
-.formulir button {
-  align-self: flex-start;
-  margin-top: 1rem;
-  padding: 0.6rem 1.5rem;
-  border: 0;
-  border-radius: 6px;
-  background: #1f2328;
-  color: #fff;
-  font: inherit;
-  cursor: pointer;
-}
-
-@media (max-width: 480px) {
-  .formulir button {
-    align-self: stretch;
-  }
-}
 #judul,
 #alamat,
 #jamBuka {
   background-color: #ffffff;
 }
 
+.formulir input:focus,
+.formulir select:focus {
+  outline: none;
+  border-color: #18362b;
+  background-color: #ffffff;
+}
+
+.formulir [role='alert'] {
+  margin: 0.25rem 0 0;
+  color: #b44c32;
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.formulir button {
+  align-self: flex-start;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.75rem;
+  border: 0;
+  border-radius: 999px;
+  background: #18362b;
+  color: #ffffff;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
 .formulir button:hover {
   opacity: 0.9;
+}
+
+@media (max-width: 480px) {
+  .formulir {
+    padding: 1.25rem;
+  }
+
+  .formulir button {
+    align-self: stretch;
+  }
 }

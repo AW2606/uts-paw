@@ -1,5 +1,6 @@
 import { Link, useNavigate, useParams } from 'react-router-dom'
 import useKoleksi from '../hooks/useKoleksi.js'
+import './Detail.css'
 
 export default function Detail() {
   const { id } = useParams()
@@ -10,9 +11,11 @@ export default function Detail() {
   if (loading) return <p>Memuat data...</p>
   if (!item) {
     return (
-      <section>
+      <section className="halaman-detail">
         <h1>Item tidak ditemukan</h1>
-        <Link to="/koleksi">Kembali ke koleksi</Link>
+        <Link to="/koleksi" className="tombol-kembali">
+          Kembali ke koleksi
+        </Link>
       </section>
     )
   }
@@ -25,23 +28,41 @@ export default function Detail() {
   }
 
   return (
-    <section>
+    <section className="halaman-detail">
       <h1>{item.judul}</h1>
-      <dl>
-        <dt>Kategori</dt>
-        <dd>{item.kategori}</dd>
-        <dt>Alamat</dt>
-        <dd>{item.alamat}</dd>
-        <dt>Harga Rata-rata</dt>
-        <dd>Rp{item.hargaRataRata}</dd>
-        <dt>Jam Buka</dt>
-        <dd>{item.jamBuka}</dd>
-      </dl>
-      <div className="aksi">
-        <button type="button" onClick={konfirmasiHapus}>
+      <p className="subjudul-detail">
+        Informasi tempat makan di sekitar kampus ITERA, tersaji dalam satu halaman.
+      </p>
+
+      <div className="kartu-detail">
+        <div className="kepala-detail">
+          <span>Kategori</span>
+          <strong>{item.kategori}</strong>
+        </div>
+
+        <dl className="daftar-detail">
+          <div className="baris-detail">
+            <dt>Alamat</dt>
+            <dd>{item.alamat}</dd>
+          </div>
+          <div className="baris-detail">
+            <dt>Harga Rata-rata</dt>
+            <dd>Rp{item.hargaRataRata}</dd>
+          </div>
+          <div className="baris-detail">
+            <dt>Jam Buka</dt>
+            <dd>{item.jamBuka}</dd>
+          </div>
+        </dl>
+      </div>
+
+      <div className="aksi-detail">
+        <Link to="/koleksi" className="tombol-kembali">
+          Kembali
+        </Link>
+        <button type="button" className="tombol-hapus" onClick={konfirmasiHapus}>
           Hapus
         </button>
-        <Link to="/koleksi">Kembali</Link>
       </div>
     </section>
   )

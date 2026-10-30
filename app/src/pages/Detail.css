@@ -1,0 +1,102 @@
+.halaman-detail {
+  max-width: 780px;
+  padding: 1rem 0;
+}
+
+.halaman-detail h1 {
+  font-size: 2.75rem;
+  margin: 0 0 0.75rem;
+}
+
+.subjudul-detail {
+  color: #6b706b;
+  margin: 0 0 2rem;
+  max-width: 520px;
+}
+
+.kartu-detail {
+  background: #ffffff;
+  border: 1px solid #eae6df;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+}
+
+.kepala-detail {
+  background: #eef1eb;
+  padding: 1.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.kepala-detail span {
+  font-size: 0.85rem;
+  color: #6b706b;
+}
+
+.kepala-detail strong {
+  font-size: 1.4rem;
+  color: #18362b;
+}
+
+.isi .daftar-detail {
+  margin: 0;
+  padding: 0.5rem 2rem;
+  display: block;
+  background: #ffffff;
+  border: 0;
+  border-radius: 0;
+  max-width: none;
+}
+
+.baris-detail {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  padding: 1.15rem 0;
+  border-bottom: 1px solid #f0ede6;
+}
+
+.baris-detail:last-child {
+  border-bottom: 0;
+}
+
+.baris-detail dt {
+  color: #6b706b;
+  font-weight: 500;
+}
+
+.baris-detail dd {
+  margin: 0;
+  color: #18362b;
+  font-weight: 700;
+}
+
+.aksi-detail {
+  display: flex;
+  gap: 0.85rem;
+  margin-top: 1.75rem;
+}
+
+.tombol-kembali {
+  padding: 0.65rem 1.4rem;
+  background: #f2f3ee;
+  border: 1px solid #dcded6;
+  border-radius: 10px;
+  color: #18362b;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.tombol-hapus {
+  padding: 0.65rem 1.4rem;
+  background: #ffffff;
+  border: 1px solid #e6cfc7;
+  border-radius: 10px;
+  color: #b44c32;
+  font: inherit;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+}

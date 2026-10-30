@@ -34,37 +34,60 @@ export default function Tambah() {
   }
 
   return (
-    <form className="formulir" onSubmit={simpan} noValidate>
+    <section className="halaman-tambah">
       <h1>Tambah Tempat Makan</h1>
+      <p className="subjudul-tambah">
+        Tambahkan informasi tempat makan baru di sekitar kampus ITERA ke dalam direktori.
+      </p>
 
-      <label htmlFor="judul">Judul</label>
-      <input id="judul" name="judul" value={form.judul} onChange={ubah} />
-      {galat && <p role="alert">{galat}</p>}
+      <form className="formulir" onSubmit={simpan} noValidate>
+        <label htmlFor="judul">Judul</label>
+        <input
+          id="judul"
+          name="judul"
+          placeholder="Contoh: Ayam Geprek Mba Uwa"
+          value={form.judul}
+          onChange={ubah}
+        />
+        {galat && <p role="alert">{galat}</p>}
 
-      <label htmlFor="kategori">Kategori</label>
-      <select id="kategori" name="kategori" value={form.kategori} onChange={ubah}>
-        <option>Nasi</option>
-        <option>Jajanan</option>
-        <option>Mie</option>
-        <option>Minuman</option>
-      </select>
+        <label htmlFor="kategori">Kategori</label>
+        <select id="kategori" name="kategori" value={form.kategori} onChange={ubah}>
+          <option>Nasi</option>
+          <option>Jajanan</option>
+          <option>Mie</option>
+          <option>Minuman</option>
+        </select>
 
-      <label htmlFor="alamat">Alamat</label>
-      <input id="alamat" name="alamat" value={form.alamat} onChange={ubah} />
+        <label htmlFor="alamat">Alamat</label>
+        <input
+          id="alamat"
+          name="alamat"
+          placeholder="Contoh: Jl. Lapas Raya, Way Huwi"
+          value={form.alamat}
+          onChange={ubah}
+        />
 
-      <label htmlFor="hargaRataRata">Harga Rata-rata</label>
-      <input
-        id="hargaRataRata"
-        name="hargaRataRata"
-        type="number"
-        value={form.hargaRataRata}
-        onChange={ubah}
-      />
+        <label htmlFor="hargaRataRata">Harga Rata-rata</label>
+        <input
+          id="hargaRataRata"
+          name="hargaRataRata"
+          type="number"
+          value={form.hargaRataRata}
+          onChange={ubah}
+        />
 
-      <label htmlFor="jamBuka">Jam Buka</label>
-      <input id="jamBuka" name="jamBuka" value={form.jamBuka} onChange={ubah} />
+        <label htmlFor="jamBuka">Jam Buka</label>
+        <input
+          id="jamBuka"
+          name="jamBuka"
+          placeholder="08:00-22:00"
+          value={form.jamBuka}
+          onChange={ubah}
+        />
 
-      <button type="submit">Simpan</button>
-    </form>
+        <button type="submit">Simpan</button>
+      </form>
+    </section>
   )
 }
