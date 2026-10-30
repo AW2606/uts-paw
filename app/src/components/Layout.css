@@ -42,10 +42,17 @@
 }
 
 .kaki {
-  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1.25rem 2.5rem;
   border-top: 1px solid #eae6df;
   color: #6b706b;
   font-size: 0.9rem;
+  box-sizing: border-box;
 }
 
 .aksi {

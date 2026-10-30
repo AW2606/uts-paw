@@ -9,8 +9,12 @@ export default function Statistik() {
   )
 
   return (
-    <section>
+    <section className="halaman-statistik">
       <h1>Statistik</h1>
+      <p className="subjudul-statistik">
+        Ringkasan jumlah tempat makan di sekitar kampus ITERA berdasarkan kategori.
+      </p>
+
       <div className="tabel-gulir">
         <table className="tabel-data">
           <thead>

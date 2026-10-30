@@ -1,42 +1,67 @@
+.halaman-statistik {
+  max-width: 640px;
+  padding: 1rem 0;
+}
+
+.halaman-statistik h1 {
+  font-size: 2.75rem;
+  margin: 0 0 0.75rem;
+}
+
+.subjudul-statistik {
+  color: #6b706b;
+  margin: 0 0 2rem;
+}
+
 .tabel-gulir {
+  background: #ffffff;
+  border: 1px solid #eae6df;
+  border-radius: 18px;
   overflow-x: auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
 }
 
 .tabel-data {
   width: 100%;
-  max-width: 480px;
   border-collapse: collapse;
 }
 
 .tabel-data th,
 .tabel-data td {
-  padding: 0.5rem 0.75rem;
-  border-bottom: 1px solid #dcdcdc;
+  padding: 1rem 1.75rem;
+  border-bottom: 1px solid #f0ede6;
   text-align: left;
+  color: #18362b;
 }
 
 .tabel-data thead th {
-  background: #f1f1f1;
+  background: #eef1eb;
+  font-size: 0.9rem;
+  color: #18362b;
+  font-weight: 700;
 }
 
 .tabel-data tbody tr:nth-child(even) {
-  background: #fafafa;
+  background: #faf9f6;
 }
 
 .tabel-data td:last-child,
 .tabel-data th:last-child {
   text-align: right;
+  font-weight: 700;
 }
 
 .tabel-data tfoot th,
 .tabel-data tfoot td {
-  border-top: 2px solid #1f2328;
-  font-weight: 600;
+  border-top: 2px solid #eae6df;
+  border-bottom: 0;
+  background: #ffffff;
+  font-weight: 700;
 }
 
 @media (max-width: 480px) {
   .tabel-data th,
   .tabel-data td {
-    padding: 0.4rem 0.5rem;
+    padding: 0.75rem 1rem;
   }
 }
