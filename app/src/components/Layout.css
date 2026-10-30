@@ -8,10 +8,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
+  max-width: 1600px;
   width: 100%;
   margin: 0 auto;
-  padding: 1.25rem 2.5rem;
+  padding: 1.25rem 5%;
   border-bottom: 1px solid #eae6df;
   color: #18362b;
   box-sizing: border-box;
@@ -35,9 +35,9 @@
 .isi {
   flex: 1;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto;
-  padding: 2.5rem;
+  padding: 2rem 5%;
   box-sizing: border-box;
 }
 
@@ -45,10 +45,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
+  max-width: 1600px;
   width: 100%;
   margin: 0 auto;
-  padding: 1.25rem 2.5rem;
+  padding: 1.25rem 5%;
   border-top: 1px solid #eae6df;
   color: #6b706b;
   font-size: 0.9rem;
